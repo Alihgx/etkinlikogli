@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etkinlik Ogli</title>
+    <style>
+        /* Başlangıçta resim ve ikinci metin gizlensin */
+        #resim {
+            display: none;
+        }
+        #metin2 {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- İlk metin -->
+    <p id="metin1" onclick="degistir()">İngilizce 999.sinif etkinlik</p>
+
+    <!-- Resim -->
+    <img id="resim" src="https://via.placeholder.com/150" alt="Resim">
+
+    <!-- İkinci metin (resmin altında olacak) -->
+    <p id="metin2">İngilizce 999. sınıf etkinlik Hello</p>
+
+    <script>
+        // Metin değiştirme ve resim gösterme fonksiyonu
+        function degistir() {
+            // İlk metni gizle
+            document.getElementById("metin1").style.display = "none";
+
+            // Resmi göster
+            document.getElementById("resim").style.display = "block";
+
+            // İkinci metni göster (resmin altında)
+            document.getElementById("metin2").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
